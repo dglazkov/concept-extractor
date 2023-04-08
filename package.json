@@ -1,0 +1,26 @@
+{
+  "name": "concept-extractor",
+  "version": "1.0.0",
+  "description": "A silly experiment in concept extraction",
+  "private": true,
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dglazkov/concept-extractor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dglazkov/concept-extractor/issues"
+  },
+  "homepage": "https://github.com/dglazkov/concept-extractor#readme",
+  "dependencies": {
+    "@clack/prompts": "^0.6.3",
+    "openai": "^3.2.1"
+  }
+}
