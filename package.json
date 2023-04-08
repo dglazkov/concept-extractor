@@ -21,6 +21,7 @@
   "homepage": "https://github.com/dglazkov/concept-extractor#readme",
   "dependencies": {
     "@clack/prompts": "^0.6.3",
+    "dotenv": "^16.0.3",
     "openai": "^3.2.1"
   }
 }

@@ -1,0 +1,18 @@
+Analyze the text and identify all core concepts defined within the text and connections between them.
+
+Represent the mental concept and connections between them as JSON in the following format:
+
+{
+"concept name": {
+"definition": "brief definition of the concept",
+"connections": [ a list of of concept names that connect with this concept ]
+}
+}
+
+TEXT TO ANALYZE:
+${input}
+
+RESPONSE:
+${completion}
+
+Identify all additional concepts from the provided text that are not yet in the JSON response and incorporate them into the JSON response. If no more concepts found, reply with "END".
