@@ -1,4 +1,5 @@
 import * as dotenv from "dotenv";
+import fs from "fs";
 
 import { intro, text, outro, spinner, log } from "@clack/prompts";
 import { OpenAIApi, Configuration } from "openai";
@@ -22,34 +23,84 @@ const getCompletion = async (prompt) => {
   return result;
 };
 
-const main = async () => {
-  intro("Welcome to the Conceptualizer!");
+const mineConcepts = async (input) => {
+  intro("Welcome to the Concept Miner!");
+
+  const askAI = spinner();
+
+  let concepts = null;
+  let result = null;
+  let hasInitial = false;
+  let conceptCount = 0;
 
   while (true) {
-    const input = await text({
-      message: "Please provide the text to be conceptualized",
-    });
+    if (!hasInitial) {
+      askAI.start("Generating Conceptualization...");
 
-    if (!input || !input.length) {
-      log.error("No input provided. Please try again.");
-      continue;
+      try {
+        concepts = await getCompletion(getPrompt("conceptualize", { input }));
+      } catch (e) {
+        askAI.stop("Error generating concepts, bailing out");
+        log.error(e.message);
+        break;
+      }
+
+      try {
+        result = JSON.parse(concepts);
+      } catch (e) {
+        askAI.stop("Invalid JSON, let's try again");
+        log.error(e.message);
+        continue;
+      }
+
+      hasInitial = true;
+
+      conceptCount = Object.keys(result).length;
+
+      askAI.stop(`Concepts generated: ${conceptCount}`);
+
+      log.info(`Concepts: ${Object.keys(result).join(", ")}`);
     }
 
-    const askAI = spinner();
+    askAI.start("Refining concepts...");
 
-    askAI.start("Generating Conceptualization...");
+    try {
+      concepts = await getCompletion(getPrompt("refine", { input, concepts }));
+    } catch (e) {
+      askAI.stop("Error refining concepts, bailing out");
+      log.error(e.message);
+      break;
+    }
 
-    const completion = await getCompletion(
-      getPrompt("conceptualize", { input })
-    );
+    try {
+      result = JSON.parse(concepts);
+    } catch (e) {
+      askAI.stop("Invalid JSON, assuming refinement cycle completed.");
+      log.error(e.message);
+      break;
+    }
 
-    const result = JSON.parse(completion);
+    if (Object.keys(result).length === conceptCount) {
+      askAI.stop("No new concepts, refinement cycle completed.");
+      break;
+    }
 
-    askAI.stop(`Concepts generated: ${Object.keys(result).length}`);
+    conceptCount = Object.keys(result).length;
 
-    break;
+    askAI.stop(`Concept count after refining : ${conceptCount}`);
+
+    log.info(`Concepts: ${Object.keys(result).join(", ")}`);
   }
-  outro("Thank you for using the Conceptualizer!");
+  outro("Thank you for using the Concept Miner!");
+
+  return concepts;
+};
+
+const main = async () => {
+  const filename = process.argv[2];
+  const file = fs.readFileSync(process.argv[2], "utf-8");
+  const concepts = await mineConcepts(file);
+  fs.writeFileSync(`${filename}.concepts.json`, concepts);
 };
 
 main();

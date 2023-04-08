@@ -13,6 +13,10 @@ TEXT TO ANALYZE:
 ${input}
 
 RESPONSE:
-${completion}
+${concepts}
 
-Identify all additional concepts from the provided text that are not yet in the JSON response and incorporate them into the JSON response. If no more concepts found, reply with "END".
+Identify all additional concepts from the provided text that are not yet in the JSON response and incorporate them into the JSON response. Add only concepts that are directly mentioned in the text.
+
+Reply with the updated JSON response.
+
+RESPONSE:
