@@ -1,0 +1,82 @@
+{
+"Generative AI": {
+"definition": "A type of artificial intelligence that is able to produce content autonomously",
+"connections": [ "Large Language Models (LLMs)", "Adult Development Theory (ADT)" ]
+},
+"Large Language Models (LLMs)": {
+"definition": "A type of artificial intelligence model used to generate natural language",
+"connections": [ "Generative AI", "Adult Development Theory (ADT)", "Poking", "Secrets", "Prompts", "Biases", "Arguments", "Expert Analysis" ]
+},
+"Adult Development Theory (ADT)": {
+"definition": "A theory that describes how individuals go through different stages of development",
+"connections": [ "Generative AI", "Large Language Models (LLMs)", "Opportunist Mind", "Socialized Mind", "Expert Mind", "Achiever Mind", "Selves", "Minds" ]
+},
+"Opportunist Mind": {
+"definition": "The earliest and least complex stage of development according to the Adult Development Theory (ADT)",
+"connections": [ "Poking", "Secrets", "Prompts", "Biases", "Twitter", "Product Testing" ]
+},
+"Socialized Mind": {
+"definition": "The glue-of-society stage of development according to the Adult Development Theory (ADT)",
+"connections": [ ]
+},
+"Expert Mind": {
+"definition": "The make-things-work stage of development according to the Adult Development Theory (ADT)",
+"connections": [ ]
+},
+"Achiever Mind": {
+"definition": "The introspective stage of development according to the Adult Development Theory (ADT)",
+"connections": [ ]
+},
+"Twitter": {
+"definition": "A social media platform",
+"connections": [ "Large Language Models (LLMs)", "Arguments" ]
+},
+"Product Testing": {
+"definition": "The process of testing a product to identify its strengths and weaknesses",
+"connections": [ "Opportunist Mind" ]
+},
+"Artificial Intelligence": {
+"definition": "The use of computer systems to perform tasks that require intelligence",
+"connections": [ "Generative AI", "Large Language Models (LLMs)" ]
+},
+"Insights": {
+"definition": "A deep understanding or knowledge about a particular subject or phenomenon",
+"connections": [ "Generative AI", "Large Language Models (LLMs)" ]
+},
+"Selves": {
+"definition": "The totality of an individual's sense of self as a unique person",
+"connections": [ "Adult Development Theory (ADT)" ]
+},
+"Minds": {
+"definition": "The part of the self that contains thoughts, feelings, and perceptions",
+"connections": [ "Adult Development Theory (ADT)" ]
+},
+"Poking": {
+"definition": "The act of prodding or poking something to test its response",
+"connections": [ "Large Language Models (LLMs)", "Opportunist Mind" ]
+},
+"Secrets": {
+"definition": "Something that is kept or meant to be kept unknown or unseen by others",
+"connections": [ "Large Language Models (LLMs)", "Opportunist Mind" ]
+},
+"Prompts": {
+"definition": "A cue or reminder that stimulates a particular mental process or response",
+"connections": [ "Large Language Models (LLMs)", "Opportunist Mind" ]
+},
+"Biases": {
+"definition": "A tendency to believe that some people, ideas, etc. are better than others that usually results in treating some people unfairly",
+"connections": [ "Large Language Models (LLMs)", "Opportunist Mind" ]
+},
+"Arguments": {
+"definition": "A fact or statement used to support a position or view",
+"connections": [ "Large Language Models (LLMs)", "Twitter" ]
+},
+"Expert Analysis": {
+"definition": "The process of critically examining a concept or issue in order to gain an understanding of it",
+"connections": [ "Large Language Models (LLMs)" ]
+},
+"LLMs": {
+"definition": "An abbreviation for Large Language Models",
+"connections": [ "Generative AI", "Large Language Models (LLMs)", "Adult Development Theory (ADT)", "Poking", "Secrets", "Prompts", "Biases", "Arguments", "Expert Analysis" ]
+}
+}
