@@ -15,7 +15,7 @@ ${input}
 RESPONSE:
 ${concepts}
 
-Identify all additional concepts from the provided text that are not yet in the JSON response and incorporate them into the JSON response. Add only concepts that are directly mentioned in the text.
+Identify all additional concepts from the provided text that are not yet in the JSON response and incorporate them into the JSON response. Add only concepts that are directly mentioned in the text. Remove concepts that were not mentioned in the text.
 
 Reply with the updated JSON response.
 

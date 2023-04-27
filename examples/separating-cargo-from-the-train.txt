@@ -1,0 +1,26 @@
+
+I’ve been puzzling over a problem that many engineering teams face and came up with this metaphor. It’s situated in the general space of attachment and could probably apply to things other than engineering teams. 
+
+Here’s the setup. Imagine that we’re leading a team whose objective is to rapidly explore some newly opened space. Everyone gets their little area of the space, and armed with enthusiasm and skill, the teams venture off into the unknown. A few months later, a weird thing happens: now we have N teams that build technology or products in basically the same space where they started.
+
+Instead of exploring, the team just settled into the first interesting thing they found. Exploration collapsed into optimizing for the newly found value niche.
+
+This might not necessarily be a bad thing. If the new space is ripe with opportunities or the team is incredibly lucky, they might have struck gold on the first try.  Except my experience tells me that most of the time, the full value of the niche is grossly overestimated, and the teams end up organizing themselves into settlers of a tiny “meh” value space.
+
+The events that follow are fairly predictable. There is a struggle between us and the individual team leads to “align”, where the word “align” really stands for “what the heck are y’all doing?! we were supposed to be exploring!!” from us and “stop distracting us with your silly ideas! we have customers to serve and things to ship!” from the sub-teams. The team becomes stuck.
+
+I have seen various ways in which the resolution plays out. There’s one with the uneasy compromise, where the “exploration team” kayfabe is played out at the higher levels (mostly in slide decks), and the sub-teams are just left to do their thing. There’s one with the leader making a “quake”: a swift reorg that leaves the sub-team leads without a path forward. There’s one where a new stealth sub-team is started to actually explore (you can guess what happens next).
+
+The lens that really helps here is “something will get optimized”. When we have engineers, we have people whose literal job description includes organizing code into something that lasts. Like a car with unbalanced wheels, by default, engineers will veer toward elephant-land. Given no other optimization criteria, what will get optimized is the quality of the code base and the robustness of the technical solution that it offers.
+
+The problem is, when exploring, we don’t need any of that. We need messy, crappy code that somewhat works to get a good sense of whether there’s a there there. And then we need to throw that code out or leave it as-is and move on to the next part of the space.
+
+This is not at all natural and intuitive for engineering teams. There are no tests! Not even a code review process! This dependency was made by a random person in Nebraska! Madness!
+
+By the way, the opposite of this phenomenon is also true. If our engineering team does not have this tendency toward building code that lasts, we probably don’t have an engineering team. We might have some coders or programmers, but no engineering.
+
+To shift an engineering team to be more amenable to exploration, we need to shift the target of the optimization.
+
+That’s where the cargo-and-train metaphor comes in. Let’s pretend that an engineering team is the train that delivers a cargo: a thing that it makes. The thing about cargo is that once it is delivered, it leaves the train and the train gets new cargo. Train is permanent. Cargo is transient.
+
+To make our train go efficiently, we optimize for moving cargo as quickly as possible, and we optimize for keeping the train in its best condition. Figuring out which part of our work we optimize to keep and which one we optimize to move is what it’s all about.

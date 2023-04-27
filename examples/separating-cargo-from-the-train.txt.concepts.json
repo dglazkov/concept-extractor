@@ -1,0 +1,118 @@
+{
+"Engineering Team": {
+"definition": "a team whose objective is to rapidly explore some newly opened space and build technology or products in that space",
+"connections": ["Attachment", "Exploration", "Optimization", "Cargo-and-Train Metaphor"]
+},
+"Attachment": {
+"definition": "the mental connection between teams and the space they explore",
+"connections": ["Engineering Team"]
+},
+"Exploration": {
+"definition": "the process of discovering new areas or opportunities",
+"connections": ["Engineering Team"]
+},
+"Optimization": {
+"definition": "the process of making something as effective or functional as possible",
+"connections": ["Engineering Team", "Cargo-and-Train Metaphor"]
+},
+"Cargo-and-Train Metaphor": {
+"definition": "a metaphor used to describe the process of an engineering team delivering a cargo and keeping the train in its best condition",
+"connections": ["Engineering Team", "Optimization"]
+},
+"Alignment": {
+"definition": "the process of getting a team to understand the goal of exploration",
+"connections": ["Engineering Team"]
+},
+"Reorganization": {
+"definition": "the process of changing the structure of a team or organization",
+"connections": ["Engineering Team"]
+},
+"Stealth Sub-Team": {
+"definition": "a sub-team created to explore a new space",
+"connections": ["Engineering Team"]
+},
+"Elephant-Land": {
+"definition": "a term used to describe the tendency of engineers to optimize for the quality of the code base and the robustness of the technical solution",
+"connections": ["Engineering Team"]
+},
+"Code Review Process": {
+"definition": "a process in which code is reviewed by a team to ensure it meets certain standards",
+"connections": ["Engineering Team"]
+},
+"Random Person in Nebraska": {
+"definition": "a person mentioned in the text as an example of someone who might have created a dependency",
+"connections": ["Engineering Team"]
+},
+"Quake": {
+"definition": "a swift reorg that leaves the sub-team leads without a path forward",
+"connections": ["Engineering Team"]
+},
+"Messy Code": {
+"definition": "code that works but is not optimized for robustness or maintainability",
+"connections": ["Engineering Team"]
+},
+"Crappy Code": {
+"definition": "code that is of low quality and is not intended to last long-term",
+"connections": ["Engineering Team"]
+},
+"Cargo": {
+"definition": "the thing that an engineering team makes",
+"connections": ["Cargo-and-Train Metaphor"]
+},
+"Train": {
+"definition": "the vehicle that transports the cargo",
+"connections": ["Cargo-and-Train Metaphor"]
+},
+"Customer": {
+"definition": "an individual or organization that receives goods and services from a business",
+"connections": ["Engineering Team"]
+},
+"Ship": {
+"definition": "to transport goods by water",
+"connections": ["Engineering Team"]
+},
+"Coders": {
+"definition": "people who write computer programs using coding languages",
+"connections": ["Engineering Team"]
+},
+"Programmers": {
+"definition": "people who create computer programs and software applications",
+"connections": ["Engineering Team"]
+},
+"Engineering": {
+"definition": "the process of designing, building, and maintaining complex systems",
+"connections": ["Engineering Team"]
+},
+"Tests": {
+"definition": "a procedure or process used to evaluate the functioning or performance of a system or product",
+"connections": ["Engineering Team"]
+},
+"Value Niche": {
+"definition": "a small market within a larger market that provides a particular type of value",
+"connections": ["Engineering Team"]
+},
+"Uneasy Compromise": {
+"definition": "a resolution that is not satisfactory to all parties involved",
+"connections": ["Engineering Team"]
+},
+"Slide Decks": {
+"definition": "a presentation of slides, typically in digital form, which may contain text, images, animation, and sound",
+"connections": ["Engineering Team"]
+},
+"Gold": {
+"definition": "a valuable resource or commodity",
+"connections": ["Engineering Team"]
+},
+"Meh Value Space": {
+"definition": "a space or area that is not of high value or interest",
+"connections": ["Engineering Team"]
+},
+"There": {
+"definition": "a place or point of interest",
+"connections": ["Engineering Team"]
+},
+"Kayfabe": {
+"definition": "a term used to describe the portrayal of staged events within the industry as 'real' or 'true'",
+"connections": ["Engineering Team"]
+}
+}
